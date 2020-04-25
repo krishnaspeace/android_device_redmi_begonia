@@ -19,6 +19,9 @@ persist.vendor.quick.charge=1
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Graphics
 ro.opengles.version=196610
 
