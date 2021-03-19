@@ -60,6 +60,9 @@ pm.dexopt.inactive=verify
 pm.dexopt.cmdline=speed
 pm.dexopt.shared=speed
 
+# Disable MTE Async for system server
+persist.arm64.memtag.system_server=off
+
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
