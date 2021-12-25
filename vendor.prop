@@ -110,6 +110,7 @@ ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_sec_video_path_support=1
 
 # Display
+ro.config.avoid_gfx_accel=true
 ro.hardware.egl=meow
 ro.vendor.all_modes.colorpick_adjust=true
 ro.vendor.cabc.enable=true
