@@ -60,6 +60,9 @@ pm.dexopt.inactive=verify
 pm.dexopt.cmdline=speed
 pm.dexopt.shared=speed
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
