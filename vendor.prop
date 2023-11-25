@@ -163,6 +163,7 @@ persist.sys.sf.color_saturation=1.1
 persist.sys.sf.color_mode=0
 persist.sys.sf.native_mode=2
 ro.opengles.version=196610
+ro.vendor.perf.scroll_opt=true
 ro.sf.lcd_density=440
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
