@@ -69,6 +69,12 @@ dalvik.vm.dex2oat64.enabled=true
 # Display
 debug.cpurend.vsync=false
 
+# Improve sliding response
+windowsmgr.max_events_per_sec=800
+view.scroll_friction=0
+ro.min_pointer_dur=0
+ro.min.pointer.dur=0
+
 # Graphics
 ro.opengles.version=196610
 
@@ -77,6 +83,9 @@ ro.kernel.zio=38,108,105,16
 
 # Netflix
 ro.netflix.bsp_rev=MTK6785-18758-1
+
+# Open the first-in-first-out interface thread
+sys.use_fifo_ui=1
 
 # Perf
 ro.mtk_perf_simple_start_win=1
@@ -136,6 +145,10 @@ persist.radio.sar_sar_sensor=true
 
 # System
 persist.sys.binary_xml=false
+
+# Turn off vertical sync (V-Sync)
+debug.hwui.disable_vsync=true
+persist.sys.ui.hw=1
 
 # Usb
 ro.sys.usb.mtp.whql.enable=0
