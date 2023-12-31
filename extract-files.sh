@@ -108,6 +108,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
             "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;;
     esac
 }
 
