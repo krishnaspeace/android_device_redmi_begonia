@@ -25,6 +25,7 @@ allow mi_thermald {
   sysfs_therm
   sysfs_thermal
   sysfs_power_supply
+  sysfs_battery_supply
   sysfs_devices_system_cpu
 }:{
   file
@@ -32,3 +33,8 @@ allow mi_thermald {
 } rw_file_perms;
 
 set_prop(mi_thermald, thermal_engine_prop)
+
+allow mi_thermald sysfs_battery_supply:dir { search };
+allow mi_thermald sysfs_battery_supply:file { open };
+allow mi_thermald sysfs_battery_supply:file { read };
+allow mi_thermald sysfs_battery_supply:file { getattr };
