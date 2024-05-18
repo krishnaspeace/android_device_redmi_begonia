@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The EverestOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -15,11 +15,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Everest OS stuff
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+
+# Extra stuff
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
 TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+WITH_GAPPS := true
+EVEREST_UDFPS_ANIMATIONS := true
+
+# Maintainer
+EVEREST_BUILD_TYPE := UNOFFICIAL
+EVEREST_MAINTAINER := Krishna
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
@@ -34,7 +43,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := lineage_begonia
+PRODUCT_NAME := everest_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
