@@ -22,10 +22,12 @@ TARGET_DOESNT_LIKE_FLIPENDO := true
 TARGET_ENABLE_BLUR := true
 TARGET_ESSENTIAL_GAPPS := true
 BLISS_BUILDTYPE := UNOFFICIAL
+BLISS_MAINTAINER := KRISHNA
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 $(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
+$(call inherit-product, packages/apps/HyperOsGallery/config.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
