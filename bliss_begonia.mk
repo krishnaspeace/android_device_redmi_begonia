@@ -22,6 +22,7 @@ TARGET_DOESNT_LIKE_FLIPENDO := true
 TARGET_ENABLE_BLUR := true
 TARGET_ESSENTIAL_GAPPS := true
 BLISS_BUILDTYPE := UNOFFICIAL
+BLISS_MAINTAINER := KRISHNA
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
