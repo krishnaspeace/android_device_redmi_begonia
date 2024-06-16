@@ -445,5 +445,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjni_shim
 
+# libshim_ui
+PRODUCT_PACKAGES += \
+    libshim_ui
+
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
