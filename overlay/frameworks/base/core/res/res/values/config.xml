@@ -524,9 +524,4 @@
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
-    <!-- Rounded corner padding and radius -->
-    <dimen name="rounded_corner_radius_top">95.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
-    <dimen name="rounded_corner_content_padding">10dp</dimen>
-
 </resources>
