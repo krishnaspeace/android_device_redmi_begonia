@@ -132,7 +132,7 @@ wifi.direct.interface=p2p0
 wifi.tethering.interface=ap0
 
 # Zygote
-ro.zygote.preload.enable=0
+ro.zygote.preload.enable=1
 
 # Zram
 ro.zram.mark_idle_delay_mins=60
