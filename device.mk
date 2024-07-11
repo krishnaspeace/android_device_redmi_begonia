@@ -452,6 +452,7 @@ PRODUCT_PACKAGES += \
 
 # Libui shim
 PRODUCT_PACKAGES += \
+    libui_shim \
     libui_shim.vendor
 
 # Inherit vendor

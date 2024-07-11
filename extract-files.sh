@@ -114,6 +114,7 @@ function blob_fixup {
         lib/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
+        vendor/lib/libMtkOmxVdecEx.so|\
         lib/libsource.so)
             grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
             ;;
