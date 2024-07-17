@@ -1,5 +1,6 @@
-mkdir prebuilts/clang/host/linux-x86/clang-neutron; 
-cd prebuilts/clang/host/linux-x86/clang-neutron; 
+sudo apt install bison flex libssl-dev python3 python-is-python3 libarchive-tools
+mkdir prebuilts/clang/host/linux-x86/clang-neutron;
+cd prebuilts/clang/host/linux-x86/clang-neutron;
 echo 'Download antman and sync'
 bash <(curl -s "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman") -S=05012024
 echo 'Patch for glibc'
