@@ -66,9 +66,6 @@ persist.arm64.memtag.system_server=off
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
-# Filesystem
-fs_mgr.overlayfs.prefer_cache_backing_storage=true
-
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
