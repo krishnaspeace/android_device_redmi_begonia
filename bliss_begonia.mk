@@ -26,7 +26,7 @@ BLISS_MAINTAINER := KRISHNA
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
-$(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
+# $(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 # Screen density
